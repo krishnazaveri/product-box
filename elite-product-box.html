@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product box</title>
+    <style>
+        
+        .box{
+            margin: 0px auto    ;
+            height: 500px;
+            width: 255px;
+            background: coral;
+        }
+
+        .box .top {
+            height: 60%;
+           
+            position: relative;
+        }
+
+        .box .top .view {
+            height: 50px;
+            width: 100%;
+            background: grey;
+            opacity: 0;
+            transition: .6s;
+            position: absolute;
+            top: 0px;
+            left: 0;
+
+        }
+        .box .top .view a {
+            text-decoration: none;
+            font-family: cursive;
+            color: white;
+            font-size: 20px;
+            align-items: center;
+            line-height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box .top:hover .view{
+
+            opacity: 1;
+            top: 240px;
+        } 
+
+        .box .mid {
+            height: 20%;
+            border: 1px solid red;
+        }
+
+        .box .bottom {
+            height: 20%;
+            border: 1px solid red;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <div><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"></div>
+            <div class="view"><a href="">Quick View</a></div>
+        </div>
+        <div class="mid">info</div>
+        <div class="bottom">add to cart</div>
+    </div>
+</body>
+</html>
